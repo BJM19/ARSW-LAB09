@@ -1,0 +1,45 @@
+{
+  "info": {
+    "_postman_id": "67742eb9-4d2e-4f10-ad7c-203dcffee2b8",
+    "name": "Fibonacci",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "PostFibo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nth\":1000000    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://functionproyectfibonnacci.azurewebsites.net/api/Fibonacci?",
+          "protocol": "https",
+          "host": [
+            "functionproyectfibonnacci",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "Fibonacci"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
