@@ -39,9 +39,15 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 ![](images/part3/part3-test-function.png)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
-
+   ![](images/img3.png)
+El comando utilizado para la ejecucion concurrente de las 10 pruebas fue el siguiente:
+   ![](images/img4.png)
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
+   ![](images/img5.png)
 
+Cada 5min aprox se borra lo que se encuentra guardado en memoria y se vuelve a recalcular el resultado
+
+![](images/img6.png)
 **Preguntas**
 
 * ¿Qué es un Azure Function?
@@ -75,14 +81,22 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 > plan de consumo (basado en el número de eventos) sin arranque en
 > frío, con un rendimiento mejorado y acceso a VNET. Se factura en función de la vCPU y la memoria
 > que consumen sus funciones.
-* ¿Por qué la memoization falla o no funciona de forma correcta?
+* ¿Por qué la memorization falla o no funciona de forma correcta?
 > Debido a los numeros muy grandes que se generan a la hora realizar
 > las peticiones, debido al plan que se escogio que fue el
 > Consumption, por lo cual el stack de memoria se llena de manera
 > rapida y no permite que la memorizacion funcione de manera
 > correcta.
+![](images/img1.png)
 * ¿Cómo funciona el sistema de facturación de las Function App?
 
 > Se factura en función del consumo de recursos y las ejecuciones
 > por segundo.
 * Informe
+  ![](images/p1.png)
+  ![](images/p2.png)
+  ![](images/p3.png)
+  ![](images/p4.png)
+  ![](images/p5.png)
+  Después de ejecutar la coleccion de postman podemos ver que estos son los compartamientos de la cpu y demas indicadores de la apliacion.
+  ![](images/img2.png)
