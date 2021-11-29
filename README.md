@@ -40,14 +40,19 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
    ![](images/img3.png)
-El comando utilizado para la ejecucion concurrente de las 10 pruebas fue el siguiente:
+   >El comando utilizado para la ejecucion concurrente de las 10 pruebas fue el siguiente:
    ![](images/img4.png)
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
+   >La implementacion de memoria realizada fue la siguiente, teniendo
+   > en cuenta que se mantiene el comportamiento anterior dado por la
+   > funcion:
    ![](images/img5.png)
 
-Cada 5min aprox se borra lo que se encuentra guardado en memoria y se vuelve a recalcular el resultado
-
-![](images/img6.png)
+   >Cada 5 minutos aproximadamente se borra lo que se encuentra guardado en memoria y
+   > se vuelve a recalcular el resultado, ademas despues de un numero
+   > aproximadamente mayor 900 el resultado es null debido a dos
+   > situaciones el stack en memoria esta lleno o el numero de
+   > recursiones maximas fue alcanzado
 **Preguntas**
 
 * ¿Qué es un Azure Function?
@@ -93,10 +98,14 @@ Cada 5min aprox se borra lo que se encuentra guardado en memoria y se vuelve a r
 > Se factura en función del consumo de recursos y las ejecuciones
 > por segundo.
 * Informe
+> Se obtuvo un acierto
+> del 100%, adiconalemente los tiempos varian entre 42.2s y 1m 16.5s, esto
+> debido al tamaño de la solicitud y al nivel de procesamiento que este
+> debe tener, los siguientes son los informes mistrados por newman:
   ![](images/p1.png)
   ![](images/p2.png)
   ![](images/p3.png)
   ![](images/p4.png)
   ![](images/p5.png)
-  Después de ejecutar la coleccion de postman podemos ver que estos son los compartamientos de la cpu y demas indicadores de la apliacion.
+>Después de ejecutar la coleccion de postman podemos ver que estos son los compartamientos de la cpu y demas indicadores de la aplicación.
   ![](images/img2.png)
