@@ -53,6 +53,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
    > aproximadamente mayor 900 el resultado es null debido a dos
    > situaciones el stack en memoria esta lleno o el numero de
    > recursiones maximas fue alcanzado
+   > 
 **Preguntas**
 
 * ¿Qué es un Azure Function?
